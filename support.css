@@ -1,0 +1,164 @@
+/* General Button Styles */
+.support-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 120, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .support-btn:hover {
+    background-color: #005bb5;
+  }
+  
+  .support-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Pop-Up Window Styles */
+  .support-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 90%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 25px;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Show animation */
+  .support-popup.show {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  /* Pop-Up Content */
+  .popup-content {
+    position: relative;
+  }
+  
+  .popup-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .popup-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .popup-content input,
+  .popup-content textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+  }
+  
+  .popup-content input:focus,
+  .popup-content textarea:focus {
+    border-color: #0078ff;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  .popup-content textarea {
+    resize: none;
+  }
+  
+  /* Submit Button */
+  .popup-content button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #0078ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .popup-content button:hover {
+    background-color: #005bb5;
+  }
+  
+  .popup-content button:active {
+    transform: scale(0.97);
+  }
+  
+  /* Close Button */
+  .popup-content .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .popup-content .close:hover {
+    color: #e74c3c;
+  }
+  
+  /* Overlay */
+  #supportPopupOverlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show overlay when pop-up is active */
+  #supportPopupOverlay.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .support-popup {
+      width: 95%;
+      padding: 20px;
+    }
+    .popup-content h2 {
+      font-size: 1.5rem;
+    }
+    .popup-content p {
+      font-size: 13px;
+    }
+  }
+  

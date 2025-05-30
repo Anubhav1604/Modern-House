@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Your Property</title>
+  <link rel="stylesheet" href="propertystyle.css">
+
+</head>
+<body>
+  <header class="header">
+    <h1>List Your Property</h1>
+    <p>Reach thousands of potential buyers and renters by listing your property with us.</p>
+  </header>
+  <main>
+    <div class="property-gallery">
+      <img src="img/list1.jpg" alt="Luxury House">
+      <img src="img/list2.jpg" alt="Modern Apartment">
+      <img src="img/home.jpeg" alt="Commercial Space">
+      <img src="img/pool.jpg" alt="Cozy Home">
+    </div>
+    
+    
+    <div class="form-container">
+      <form class="property-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="title">Property Title</label>
+            <input type="text" id="title" name="title" placeholder="e.g., Luxury Apartment in Downtown" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Los Angeles, CA" required>
+          </div>
+          <div class="form-group">
+            <label for="price">Price ($)</label>
+            <input type="number" id="price" name="price" placeholder="e.g., 250000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="property-type">Property Type</label>
+            <select id="property-type" name="property-type" required>
+              <option value="" disabled selected>Select Type</option>
+              <option value="apartment">Apartment</option>
+              <option value="house">House</option>
+              <option value="commercial">Commercial</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bedrooms">Bedrooms</label>
+            <input type="number" id="bedrooms" name="bedrooms" placeholder="e.g., 3" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4" placeholder="Write a brief description of your property..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">List Property</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
